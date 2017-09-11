@@ -1,0 +1,20 @@
+name: vertical_detachment_energy
+authors:
+ - Aaron Virshup: Autodesk Research
+ - Marat Valiev: Pacific Northwest National Laboratory
+contributors:
+ - "@avirshup"
+description: Calculate the energy necessary to photoionize a closed-shell molecule.
+methods: |
+  This workflow calculates the "vertical detachment energy" (VDE) of a small molecule. The input
+  molecule is first optimized at the RKS/B3LYP/6-31g level of theory. The VDE is
+  is then calculated as the difference between the closed-shell singlet state (using
+  RKS/B3LYP/6-31g) and the open shell doublet after removing an electron (using RKS/B3LYP/6-31g).
+citations:
+  - molsim.bionano.autodesk.com
+definition_file:
+  - parameterizer.py
+keywords:
+  - dft
+  - spectroscopy
+  - small-molecule
